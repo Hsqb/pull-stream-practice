@@ -10,3 +10,4 @@ document.getElementById("app").innerHTML = `
 `;
 
 pull(pull.values([1, 2, 3]), pull.log());
+pull(pull.values([1, 2, 3]), pull.map(x => x * 2), pull.log());
